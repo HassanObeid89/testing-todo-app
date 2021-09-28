@@ -1,4 +1,5 @@
 
+import { useState } from "react";
 import { useRecoilState } from "recoil";
 import { listState } from "../state/listState";
 import ShoppingList from "./ShoppingList";
@@ -6,7 +7,7 @@ import ButtonAddItem from './ButtonAddItem'
 import Sorter from "./Sorter";
 export default function NormalScreen({ setModal }) {
   const [list,setList] = useRecoilState(listState);
-
+  const [showAcquired, setShowAcquired] = useState(false)
   const acquiredList = list.filter((item) => item.acquired === true);
   const pendingList = list.filter((item) => item.acquired === false);
 
@@ -22,7 +23,8 @@ export default function NormalScreen({ setModal }) {
       <Sorter/>
       <ShoppingList list={pendingList} editList={editList} />
       <ButtonAddItem setModal={setModal} />
-      <ShoppingList list={acquiredList} editList={editList}/>
+      <button onClick={()=>setShowAcquired(!showAcquired)}>Show acquired items</button>
+      {showAcquired && <ShoppingList list={acquiredList} editList={editList}/>}
     </div>
   );
 }
