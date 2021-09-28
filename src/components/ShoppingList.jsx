@@ -1,10 +1,10 @@
 import ShoppingItem from "./ShoppingItem";
 
-export default function ShoppingList({list}) {
-  const items = list.map((item) => <ShoppingItem key={item.id} item={item} />);
+export default function ShoppingList({list, editList}) {
+  const items = list.map((item) => <ShoppingItem key={item.id} item={item} editList={editList} />);
   return (
     <div>
-      <ul>{items}</ul>
+      {list.length > 0 ? items : <p>No items yet!</p>}
     </div>
   );
 }

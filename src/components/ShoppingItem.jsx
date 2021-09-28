@@ -1,11 +1,20 @@
-import Checkbox from "./Checkbox";
+export default function ShoppingItem({ item, editList }) {
+  const { name, price, acquired } = item;
+  function editItem(key, editedValue) {
+    const editedItem = { ...item };
 
-export default function ShoppingItem({ item }) {
+    editedItem[key] = editedValue;
+    editList(editedItem);
+  }
   return (
     <div>
-      <Checkbox />
-      <p>{item.name}</p>
-      <p>{item.price}</p>
+      <input
+        type="checkbox"
+        checked={acquired}
+        onChange={() => editItem("acquired", !acquired)}
+      />
+      <p>{name}</p>
+      <p>{price}</p>
     </div>
   );
 }
