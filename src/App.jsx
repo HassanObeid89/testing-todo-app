@@ -6,6 +6,7 @@ import './css/styles.css';
 
 export default function App() {
   const [list, setList] = useState([])
+  
   return (
     <div className="App">
       {list.length === 0 ? <WelcomeScreen/> : <NormalScreen/>}
