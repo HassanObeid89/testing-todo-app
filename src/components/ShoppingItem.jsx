@@ -1,11 +1,11 @@
 import Checkbox from "./Checkbox";
 
-export default function ShoppingItem() {
-    return (
-        <div>
-            <Checkbox/>
-            <p>name</p>
-            <p>price</p>
-        </div>
-    )
+export default function ShoppingItem({ item }) {
+  return (
+    <div>
+      <Checkbox />
+      <p>{item.name}</p>
+      <p>{item.price}</p>
+    </div>
+  );
 }
