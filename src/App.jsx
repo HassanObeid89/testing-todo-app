@@ -9,7 +9,7 @@ export default function App() {
   const [modal, setModal] = useState(null)
   return (
     <div className="App">
-      {list.length === 0 ? <WelcomeScreen setModal={setModal} modal={modal} list={list} setList={setList} /> : <NormalScreen list={list}/>}
+      {list.length === 0 ? <WelcomeScreen setModal={setModal} modal={modal} list={list} setList={setList} /> : <NormalScreen setList={setList} list={list} setModal={setModal}/>}
       <ModalContainer modal={modal} setModal={setModal} />
     </div>
   );
