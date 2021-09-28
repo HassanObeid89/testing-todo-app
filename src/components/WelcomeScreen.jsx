@@ -11,13 +11,7 @@ export default function WelcomeScreen({ modal, setModal, list, setList }) {
         the name and the price of the new item. Hit Add item. if the task is
         done Hit the checkbox.
       </p>
-
-      <ButtonAddItem
-        setModal={setModal}
-        modal={modal}
-        list={list}
-        setList={setList}
-      />
+      <ButtonAddItem setModal={setModal} />
     </div>
   );
 }

@@ -1,7 +1,10 @@
 import { useState } from "react";
+import { useRecoilState } from "recoil";
+import { listState } from "../state/listState";
 import uuid from "uuid/dist/v4";
 import addNewItem from "../scripts/addNewItem";
-export default function ModalForm({ list, setList, setModal }) {
+export default function ModalForm({ setModal }) {
+  const [list, setList] = useRecoilState(listState);
   const [itemName, setName] = useState("");
   const [itemPrice, setPrice] = useState("");
 

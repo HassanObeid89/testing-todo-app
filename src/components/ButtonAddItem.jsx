@@ -1,9 +1,9 @@
 import ModalForm from "./ModalForm";
 
-export default function ButtonAddItem({ setModal, list, setList }) {
+export default function ButtonAddItem({ setModal }) {
   function openModal() {
     //set modal visible
-    setModal(<ModalForm list={list} setList={setList} setModal={setModal} />);
+    setModal(<ModalForm setModal={setModal} />);
   }
   return (
     <div>
