@@ -1,3 +1,4 @@
+import ButtonAddItem from './ButtonAddItem'
 import cart from "../assets/images/cart.png";
 export default function WelcomeScreen() {
   return (
@@ -10,6 +11,7 @@ export default function WelcomeScreen() {
         Specify the name and the price of the new item. Hit Add item. if the
         task is done Hit the checkbox.
       </p>
+      <ButtonAddItem/>
     </div>
   );
 }
