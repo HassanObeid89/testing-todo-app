@@ -1,7 +1,9 @@
-export default function NormalScreen() {
-    return (
-        <div>
-            <p>normal screen</p>
-        </div>
-    )
+import ShoppingList from "./ShoppingList";
+
+export default function NormalScreen({ list }) {
+  return (
+    <div>
+      <ShoppingList list={list} />
+    </div>
+  );
 }
