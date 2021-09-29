@@ -13,8 +13,8 @@ export default function Sorter() {
     setList(sortedList);
   }
   return (
-    <section>
-      <p>sort by:</p>
+    <section className='sorter'>
+      <span>Sort by:</span>
       <button onClick={() => sortListByName(list)}>Name</button>
       <button onClick={() => sortListByPrice(list)}>Price</button>
     </section>

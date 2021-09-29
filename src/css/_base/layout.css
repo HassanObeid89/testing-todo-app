@@ -2,3 +2,13 @@
     text-align: center;
     margin: 48px;
 }
+
+.App img {
+    max-width: 200px;
+    height: auto;
+}
+
+.welcome-screen {
+    max-width: 260px;
+    margin: 0 auto;
+}

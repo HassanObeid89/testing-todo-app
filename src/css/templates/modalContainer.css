@@ -5,9 +5,10 @@
     transform: translate(-50%, -50%);
     background-color: white;
     z-index: 100;
-    width: 90%;
+    width: 60%;
     height: auto;
-    max-height: 100%;
+    max-width: 280px;;
+    border-radius: 12px;
   }
   .modal-background {
     position: fixed;
@@ -28,8 +29,6 @@
   }
   
   @media screen and (min-width: 550px) {
-    .modal-window {
-      max-width: 60%;
-    }
+  
   }
   

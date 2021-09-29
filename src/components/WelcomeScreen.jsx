@@ -1,10 +1,7 @@
 import ButtonAddItem from "./ButtonAddItem";
-import cart from "../assets/images/cart.png";
-export default function WelcomeScreen({ modal, setModal, list, setList }) {
+export default function WelcomeScreen({ setModal }) {
   return (
-    <div id="welcome-screen">
-      <img src={cart} alt="" />
-      <h1>Shopping List</h1>
+    <div className="welcome-screen">
       <h3>Welcome!</h3>
       <p>
         Your shopping list is empty right now. Click Add item button. Specify

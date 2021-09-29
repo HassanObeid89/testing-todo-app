@@ -15,19 +15,25 @@ export default function ModalForm({ setModal }) {
   };
 
   return (
-    <div>
+    <div className='modalForm'>
       <form onSubmit={handleSubmit}>
+        <label>Item name</label>
         <input
           type="text"
           value={itemName}
           onChange={(e) => setName(e.target.value)}
+          placeholder='Sofa'
         />
+        <label>Item price</label>
         <input
           type="number"
           value={itemPrice}
           onChange={(e) => setPrice(e.target.value)}
+          placeholder='999:-'
         />
+        <div className='button-wrapper'>
         <button type="submit">Submit</button>
+        </div>
       </form>
     </div>
   );
