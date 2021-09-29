@@ -1,3 +1,5 @@
 @import './_base/layout.css';
+@import './_base/variables.css';
 @import './templates/normalScreen.css';
 @import './templates/modalContainer.css';
+@import './templates/buttonAddItem.css';

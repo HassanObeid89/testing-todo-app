@@ -6,7 +6,7 @@ export default function ButtonAddItem({ setModal }) {
     setModal(<ModalForm setModal={setModal} />);
   }
   return (
-    <div>
+    <div className='button-wrapper'>
       <button onClick={openModal}>Add Item</button>
     </div>
   );
