@@ -8,13 +8,13 @@ export default function ShoppingItem({ item, editList }) {
   }
   return (
     <section className="shopping-item">
-      <label class="container">
+      <label className="container">
         <input
           type="checkbox"
           checked={acquired}
           onChange={() => editItem("acquired", !acquired)}
         />
-        <span class="checkmark"></span>
+        <span className="checkmark"></span>
       </label>
       <span>{name}</span>
       <span></span>

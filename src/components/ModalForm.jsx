@@ -7,16 +7,16 @@ export default function ModalForm({ setModal }) {
   const [itemName, setName] = useState("");
   const [itemPrice, setPrice] = useState("");
 
-  const handleSubmit = (event) => {
+  function handleSubmit(event) {
     event.preventDefault();
-    const newItem = addNewItem(itemName, itemPrice);
+    const newItem = addNewItem(itemName, itemPrice,setModal);
     if (newItem !== null) setList([...list, newItem]);
-    setModal(null);
   };
+
 
   return (
     <div className='modalForm'>
-      <form onSubmit={handleSubmit}>
+      <form onSubmit={(event)=>handleSubmit(event)}>
         <label>Item name</label>
         <input
           type="text"
