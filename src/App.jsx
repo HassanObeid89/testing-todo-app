@@ -30,7 +30,7 @@ export default function App() {
   return (
     <div className="App">
       <img src={cart} alt="" />
-      <h1> Your Shopping List</h1>
+      <h3> Your Shopping List</h3>
       {list.length === 0 ? (
         <WelcomeScreen setModal={setModal} />
       ) : (
