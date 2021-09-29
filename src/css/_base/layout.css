@@ -2,3 +2,8 @@
     text-align: center;
     margin: 48px;
 }
+
+.App img {
+    max-width: 200px;
+    height: auto;
+}

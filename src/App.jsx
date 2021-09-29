@@ -4,6 +4,8 @@ import WelcomeScreen from "./components/WelcomeScreen";
 import NormalScreen from "./components/NormalScreen";
 import ModalContainer from "./components/ModalContainer";
 import { listState } from "./state/listState";
+
+import cart from "./assets/images/cart.png";
 import "./css/styles.css";
 
 export default function App() {
@@ -27,6 +29,8 @@ export default function App() {
 
   return (
     <div className="App">
+      <img src={cart} alt="" />
+      <h1> Your Shopping List</h1>
       {list.length === 0 ? (
         <WelcomeScreen setModal={setModal} />
       ) : (
