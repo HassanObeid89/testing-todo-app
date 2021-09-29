@@ -19,11 +19,11 @@ export default function NormalScreen({ setModal }) {
     setList(clonedList);
   }
   return (
-    <div>
+    <div className='normal-screen'>
       <Sorter/>
       <ShoppingList list={pendingList} editList={editList} />
       <ButtonAddItem setModal={setModal} />
-      <button onClick={()=>setShowAcquired(!showAcquired)}>Show acquired items</button>
+      <button className='secondary-button' onClick={()=>setShowAcquired(!showAcquired)}>Show acquired items</button>
       {showAcquired && <ShoppingList list={acquiredList} editList={editList}/>}
     </div>
   );
