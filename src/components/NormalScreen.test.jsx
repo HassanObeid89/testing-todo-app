@@ -13,4 +13,3 @@ test("Normal screen should have Add item button", () => {
   const buttonElement = screen.getAllByText(/add item/i);
   expect(buttonElement).toBeInTheDocument;
 });
-
