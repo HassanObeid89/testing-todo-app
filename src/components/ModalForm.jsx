@@ -15,7 +15,7 @@ export default function ModalForm({ setModal }) {
 
 
   return (
-    <div className='modalForm'>
+    <div data-testid='modalForm' className='modalForm'>
       <form onSubmit={(event)=>handleSubmit(event)}>
         <label>Item name</label>
         <input

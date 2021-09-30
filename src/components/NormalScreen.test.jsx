@@ -1,15 +1,16 @@
-import { render, screen } from "@testing-library/react";
+import { render } from "@testing-library/react";
 import { RecoilRoot } from "recoil";
 
 import NormalScreen from "./NormalScreen";
 
-test("Normal screen should have Add item button", () => {
-  render(
-    <RecoilRoot>
-      <NormalScreen />
-    </RecoilRoot>
-  );
-
-  const buttonElement = screen.getAllByText(/add item/i);
-  expect(buttonElement).toBeInTheDocument;
+describe("NormalScreen component", () => {
+  it("Normal screen should have Add item button", () => {
+    const { getByTestId } = render(
+      <RecoilRoot>
+        <NormalScreen />
+      </RecoilRoot>
+    );
+    const buttonElement = getByTestId("addItem");
+    expect(buttonElement).toBeTruthy();
+  });
 });

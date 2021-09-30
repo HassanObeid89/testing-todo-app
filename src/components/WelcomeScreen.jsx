@@ -1,7 +1,7 @@
 import ButtonAddItem from "./ButtonAddItem";
 export default function WelcomeScreen({ setModal }) {
   return (
-    <div className="welcome-screen">
+    <div data-testid='welcomeScreen' className="welcome-screen">
       <h3>Welcome!</h3>
       <p>
         Your shopping list is empty right now. Start Adding items. Specify

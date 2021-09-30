@@ -19,7 +19,7 @@ export default function NormalScreen({ setModal }) {
     setList(clonedList);
   }
   return (
-    <div className='normal-screen'>
+    <div data-testid='normalScreen' className='normal-screen'>
       <Sorter/>
       <ShoppingList list={pendingList} editList={editList} />
       <ButtonAddItem setModal={setModal} />
