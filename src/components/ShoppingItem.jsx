@@ -10,6 +10,7 @@ export default function ShoppingItem({ item, editList }) {
     <section className="shopping-item">
       <label className="container">
         <input
+          data-testid='checkbox'
           type="checkbox"
           checked={acquired}
           onChange={() => editItem("acquired", !acquired)}

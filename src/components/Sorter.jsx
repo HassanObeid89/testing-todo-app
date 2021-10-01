@@ -15,8 +15,8 @@ export default function Sorter() {
   return (
     <section className='sorter'>
       <span>Sort by:</span>
-      <button onClick={() => sortListByName(list)}>Name</button>
-      <button onClick={() => sortListByPrice(list)}>Price</button>
+      <button data-testid='byName' onClick={() => sortListByName(list)}>Name</button>
+      <button data-testid='byPrice'onClick={() => sortListByPrice(list)}>Price</button>
     </section>
   );
 }
