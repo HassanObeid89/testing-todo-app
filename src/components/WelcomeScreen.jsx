@@ -1,5 +1,5 @@
 import ButtonAddItem from "./ButtonAddItem";
-export default function WelcomeScreen({ setModal }) {
+export default function WelcomeScreen() {
   return (
     <div data-testid='welcomeScreen' className="welcome-screen">
       <h3>Welcome!</h3>
@@ -8,7 +8,7 @@ export default function WelcomeScreen({ setModal }) {
         the name and the price of the new item. If the task is
         done Hit the checkbox.
       </p>
-      <ButtonAddItem setModal={setModal} />
+      <ButtonAddItem />
     </div>
   );
 }

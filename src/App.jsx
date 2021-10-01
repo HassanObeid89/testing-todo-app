@@ -10,7 +10,7 @@ import "./css/styles.css";
 
 export default function App() {
   const [list, setList] = useRecoilState(listState);
-  const [modal, setModal] = useState(null);
+  
   const STORAGE_KEY = "shoppingList";
 
   function loadData(storageKey, setList) {
@@ -32,11 +32,11 @@ export default function App() {
       <img src={cart} alt="" />
       <h3> Your Shopping List</h3>
       {list.length === 0 ? (
-        <WelcomeScreen setModal={setModal} />
+        <WelcomeScreen  />
       ) : (
-        <NormalScreen setModal={setModal} />
+        <NormalScreen />
       )}
-      <ModalContainer modal={modal} setModal={setModal} />
+      <ModalContainer  />
     </div>
   );
 }
