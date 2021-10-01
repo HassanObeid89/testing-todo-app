@@ -13,4 +13,5 @@
   padding: 10px 24px 14px;
   border: 2px solid transparent;
   max-width: 300px;
+  cursor: pointer;
 }
