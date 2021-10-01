@@ -1,4 +1,4 @@
-import { useState, useEffect } from "react";
+import { useEffect } from "react";
 import { useRecoilState } from "recoil";
 import WelcomeScreen from "./components/WelcomeScreen";
 import NormalScreen from "./components/NormalScreen";
