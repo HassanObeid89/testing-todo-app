@@ -1,14 +1,14 @@
 import ButtonAddItem from "./ButtonAddItem";
-export default function WelcomeScreen({ setModal }) {
+export default function WelcomeScreen() {
   return (
-    <div className="welcome-screen">
+    <div data-testid='welcomeScreen' className="welcome-screen">
       <h3>Welcome!</h3>
       <p>
-        Your shopping list is empty right now. Click Add item button. Specify
-        the name and the price of the new item. Hit Add item. if the task is
+        Your shopping list is empty right now. Start Adding items. Specify
+        the name and the price of the new item. If the task is
         done Hit the checkbox.
       </p>
-      <ButtonAddItem setModal={setModal} />
+      <ButtonAddItem />
     </div>
   );
 }
