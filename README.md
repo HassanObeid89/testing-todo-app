@@ -1,70 +1,79 @@
-# Getting Started with Create React App
-
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-## Available Scripts
+# 1. Shopping list test
 
-In the project directory, you can run:
+This is a simple todo list app, allow users to add items to their shopping list.
 
-### `yarn start`
+The project is done with the latest version of React and uses functional components with Hooks for better modularity in case it needs to be expanded.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+---
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+## 2. Setup
 
-### `yarn test`
+These are the instructions to run the project:
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+1. Open the terminal and navigate to the folder where this readme file is located.
+1. Install the project dependencies by typing `npm install` on the terminal.
+1. Start the project by typing `npm start` on the terminal.
 
-### `yarn build`
+---
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## 3. Usage instructions
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+To get started press the Add item button and a modal will popup fill in the form (name and price) then submit.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+Once an item has been completed, you can mark it as complete by pressing on the checkbox.
 
-### `yarn eject`
+---
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+## 4. Dependencies
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+Beside React JS and it's own dependencies, this project uses:
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+1. Recoil for global state management of the shopping list and modal states.
+2. Firebase for hosting the project.
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+---
 
-## Learn More
+## 5. Project organization
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+### 5.1 Requirement gathering
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+[Icloud pages link](https://www.icloud.com/pages/0QEMNks7iobqc-ySOqNSRZf8w#project-4-testing-todo-hassan-o)
 
-### Code Splitting
+---
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+### 5.2 Project spreadsheet
 
-### Analyzing the Bundle Size
+A spreadsheet with the information related to the organization of the project.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+[Google Spreadsheets link](https://docs.google.com/spreadsheets/d/1OperdKDsbQGf6e-dkj3yTbINkmX34y1Y/edit?usp=sharing&ouid=115827464576694642970&rtpof=true&sd=true)
 
-### Making a Progressive Web App
+---
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+### 5.3 User flows
 
-### Advanced Configuration
+A low detail diagram to visualize how the app will work.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+The focus is to undertand what interactions like clicking buttons, filling forms, etc, in order to complete their objectives inside the app.
 
-### Deployment
+[Whinsical User Flow board](https://whimsical.com/testing-todo-app-hassan-o-K7AUnQX2smRpFvYsBEHJbQ)
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+---
 
-### `yarn build` fails to minify
+### 5.4 Design mockup
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+A low detail mockup to visualize how the app will look.
+
+The focus is on colors, fonts, branding and the positions of each element on the screen.
+
+[Figma link](https://www.figma.com/file/YVw7Yus46XpOcBdZPPayRe/Testing-todo-list-hassan-o?node-id=0:1)
+
+---
+
+### 5.5 Component tree
+
+The component tree allows to visualize the overall hierarchy of the project.
+
+The diagram covers the overal application layout:
+![Component tree](https://whimsical.com/component-tree-testing-todo-hassan-o-Y296EBemAoPqkjTL7QDwKS)
