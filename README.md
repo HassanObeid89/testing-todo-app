@@ -1,8 +1,8 @@
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-# 1. Shopping list test
+# 1. Shopping list with unit test
 
-This is a simple todo list app, allow users to add items to their shopping list.
+This is not a new shopping list app, it is Eika app that allow users to add items to their shopping list, but with unit testing.
 
 The project is done with the latest version of React and uses functional components with Hooks for better modularity in case it needs to be expanded.
 
@@ -32,6 +32,8 @@ Beside React JS and it's own dependencies, this project uses:
 
 1. Recoil for global state management of the shopping list and modal states.
 2. Firebase for hosting the project.
+3. Jest and React-testing-library to write unit testing.
+5. uuid to create unique id for the shopping items.
 
 ---
 
