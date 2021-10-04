@@ -76,4 +76,5 @@ The focus is on colors, fonts, branding and the positions of each element on the
 The component tree allows to visualize the overall hierarchy of the project.
 
 The diagram covers the overal application layout:
-![Component tree](https://whimsical.com/component-tree-testing-todo-hassan-o-Y296EBemAoPqkjTL7QDwKS)
+
+[Component tree](https://whimsical.com/component-tree-testing-todo-hassan-o-Y296EBemAoPqkjTL7QDwKS)
